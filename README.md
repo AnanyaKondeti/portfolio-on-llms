@@ -1,18 +1,31 @@
-# 🔍 Project 6: HCI Usability Analyzer
+# 🤖 LLM & Prompt Engineering Portfolio
+### Ananya Kondeti | MEng Computer Science @ Oregon State University
 
-## What it does
-Automatically evaluates app descriptions against Nielsen's 
-10 Usability Heuristics using LLM analysis.
+Hands-on prompt engineering projects built for entry-level 
+Prompt Engineer roles at MNCs.
 
-## Key Features
-- Scores each heuristic from 1-5
-- Identifies specific usability issues
-- Provides actionable improvement suggestions
+---
 
-## Connection to Real Work
-Mirrors real HCI research methodology used in usability 
-studies - same framework used in OSU HCI coursework.
+## 📁 Projects
 
-## Tech Used
+| # | Project | Skills | Status |
+|---|---------|--------|--------|
+| 1 | [LLM Prompt Tester](./project1-llm-tester/) | Groq API, Prompt styles | ✅ Done |
+| 2 | [Few-Shot vs Zero-Shot](./project2-fewshot-benchmark/) | Prompt techniques | ✅ Done |
+| 3 | [Chain of Thought](./project3-chain-of-thought/) | CoT prompting | ✅ Done |
+| 4 | [RAG Document Q&A](./project4-rag-qa/) | RAG, FAISS | ✅ Done |
+| 5 | [Prompt Injection Defense](./project5-prompt-injection-defense/) | AI Safety | ✅ Done |
+| 6 | [HCI Usability Analyzer](./project6-hci-usability-analyzer/) | UX + LLM | ✅ Done |
+| 7-20 | Coming soon... | | ⏳ |
+
+---
+
+## 🛠️ Tech Stack
 - Python, Groq API, LLaMA 3.1
-- Nielsen's 10 Heuristics framework
+- FAISS, SentenceTransformers
+- LangChain, Streamlit (coming soon)
+
+---
+
+## 🎯 Goal
+20 projects by March 13, 2026
