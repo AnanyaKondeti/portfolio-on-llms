@@ -8,6 +8,8 @@ Prompt Engineer roles at MNCs.
 
 ## 📁 Projects
 
+| # | Project | Skills | Status |
+|---|---------|--------|--------|
 | 1 | [LLM Prompt Tester](./project1-llm-tester/) | Groq API, Prompt styles | ✅ Done |
 | 2 | [Few-Shot vs Zero-Shot](./project2-fewshot-benchmark/) | Prompt techniques | ✅ Done |
 | 3 | [Chain of Thought](./project3-chain-of-thought/) | CoT prompting | ✅ Done |
