@@ -1,26 +1,17 @@
-# 🤖 LLM & Prompt Engineering Portfolio
-### Ananya Kondeti | MEng Computer Science @ Oregon State University
+# 📊 Project 2: Few-Shot vs Zero-Shot Benchmark
 
-A collection of hands-on prompt engineering projects built to demonstrate 
-LLM expertise for entry-level Prompt Engineer roles at MNCs.
+## What it does
+Compares Zero-Shot vs Few-Shot prompting accuracy on sentiment analysis.
 
----
+## Key Findings
+- Both score 7/10 on tricky reviews
+- Few-Shot handles ambiguous phrases better ("Could be worse")
+- Neither handles sarcasm well ("Surprisingly not terrible")
+- Adding examples helps with ambiguous language
 
-## 📁 Projects
+## Prompt Techniques Compared
+- Zero-Shot: No examples given
+- Few-Shot: 4 examples provided before the question
 
-| # | Project | Skills | Status |
-|---|---------|--------|--------|
-| 1 | [LLM Prompt Tester](./project1-llm-tester) | Prompt styles, Groq API, Python | ✅ Done |
-| 2 | Few-Shot vs Zero-Shot Benchmark | Prompt techniques, Evaluation | 🔨 Building |
-
----
-
-## 🛠️ Tech Stack
+## Tech Used
 - Python, Groq API, LLaMA 3.1
-- LangChain, FAISS, Streamlit (coming soon)
-- OpenAI, Gemini, Anthropic APIs (coming soon)
-
----
-
-## 🎯 Goal
-20 projects in 20 days — Feb 21 to Mar 13, 2026
