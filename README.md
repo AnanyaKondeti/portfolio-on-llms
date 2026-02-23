@@ -16,7 +16,11 @@ Prompt Engineer roles at MNCs.
 | 4 | [RAG Document Q&A](./project4-rag-qa/) | RAG, FAISS | ✅ Done |
 | 5 | [Prompt Injection Defense](./project5-prompt-injection-defense/) | AI Safety | ✅ Done |
 | 6 | [HCI Usability Analyzer](./project6-hci-usability-analyzer/) | UX + LLM | ✅ Done |
-| 7-20 | Coming soon... | | ⏳ |
+| 7 | [IoT Alert Summarizer](./project7-iot-alert-summarizer/) | IoT + LLM | ✅ Done |
+| 8 | [ReAct Agent](./project8-react-agent/) | Agentic AI | ✅ Done |
+| 9 | [Prompt Evaluator](./project9-prompt-evaluator/) | LLM Evaluation | ✅ Done |
+| 10 | [Resume Tailor Bot](./project10-resume-tailor-bot/) | NLP, Prompting | ✅ Done |
+| 11-20 | Coming soon... | | ⏳ |
 
 ---
 
