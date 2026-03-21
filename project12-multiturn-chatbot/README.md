@@ -1,58 +1,21 @@
-import os
-from groq import Groq
-from dotenv import load_dotenv
+# 🤖 Project 12: Multi-Turn Chatbot with Memory
 
-load_dotenv()
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+## What it does
+A career coach chatbot that remembers everything said
+across the entire conversation using conversation history.
 
-def chat(conversation_history, user_message):
-    # Add user message to history
-    conversation_history.append({
-        "role": "user",
-        "content": user_message
-    })
-    
-    # Send entire history to LLM
-    response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
-        messages=conversation_history
-    )
-    
-    assistant_message = response.choices[0].message.content.strip()
-    
-    # Add assistant response to history
-    conversation_history.append({
-        "role": "assistant",
-        "content": assistant_message
-    })
-    
-    return assistant_message, conversation_history
+## Key Feature
+Demonstrates short-term memory by passing full conversation
+history to LLM on every message.
 
-# System prompt gives the chatbot a persona
-system_prompt = {
-    "role": "system",
-    "content": """You are a helpful AI career coach specializing in 
-tech jobs and prompt engineering roles. You remember everything 
-the user tells you and refer back to it naturally."""
-}
+## Memory Test Result
+Bot correctly recalled user's name and experience
+when asked later in conversation ✅
 
-# Start conversation with system prompt
-conversation = [system_prompt]
+## How memory works
+Every message is stored in a list and sent to the LLM
+each time - LLM reads back the history to "remember"
 
-# Simulated multi-turn conversation
-exchanges = [
-    "Hi! My name is Ananya and I'm looking for a prompt engineer job",
-    "I have experience in IoT systems and HCI research",
-    "What skills should I focus on?",
-    "What was my name again and what experience did I mention?",
-    "Can you suggest 3 companies I should apply to?",
-]
-
-print("🤖 Multi-Turn Career Coach Chatbot")
-print("=" * 60)
-
-for user_input in exchanges:
-    print(f"\n👤 User: {user_input}")
-    response, conversation = chat(conversation, user_input)
-    print(f"🤖 Bot: {response}")
-    print(f"📝 Messages in memory: {len(conversation)}")
+## Tech Used
+- Python, Groq API, LLaMA 3.1
+- Conversation history management
