@@ -1,5 +1,5 @@
 # 🤖 LLM & Prompt Engineering Portfolio
-### Ananya Kondeti | MS Computer Science @ Oregon State University
+### Ananya Kondeti | MEng Computer Science @ Oregon State University
 
 Hands-on prompt engineering projects built for entry-level 
 Prompt Engineer roles at MNCs.
